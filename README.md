@@ -1,1 +1,1 @@
-# cortex2verctor
+# cortex2vector
