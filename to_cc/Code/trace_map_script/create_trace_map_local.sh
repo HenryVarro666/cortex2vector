@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_dir=/mnt/disk1/HCP_luzhang_do/HCP_200_project_use
+target_dir=./Test1
 
 filenames=$(ls $target_dir)
 
