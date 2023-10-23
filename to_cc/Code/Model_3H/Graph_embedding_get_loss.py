@@ -132,11 +132,7 @@ def test(data_loader, test_model, writer, epoch, prefix, exp_num, device):
     losses = AverageMeter()  # loss (per word decoded)
 
     start = time.time()
-    for i, (DataID, multi_hot_feature) in enumerate(data_loader):
-        # pdb.set_trace()
-        data_time.update(time.time() - start)
-        hot_num = multi_hot_feature.shape[1]
-        multi_hot_feature = multi_hot_feature.to(device).float()
+    
 
         with torch.no_grad():
             x_decoder, x_embedding, x_de_embedding, x_combine = test_model(multi_hot_feature)
